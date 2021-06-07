@@ -325,10 +325,10 @@ footer {
     .title {
         padding-top: 20%;
         padding-bottom: 10%;
-        font-size: 5.75rem;
+        font-size: 4.25rem;
     }
     .subtitle {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
     .about-container {
         flex-direction: column;
