@@ -252,6 +252,10 @@ input, textarea {
     margin: 2%;
 }
 
+.mobile-up {
+    display: none;
+}
+
 .up-arrow {
     position: fixed;
     bottom: 0;
@@ -260,7 +264,7 @@ input, textarea {
     border: none;
     font-size: 3.5rem;
     color: #eeeeee;
-    opacity: 0.5;
+    opacity: 0.3;
     text-decoration: none;
 }
 
@@ -286,7 +290,59 @@ footer {
     background-clip: content-box;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1024px) {
+    .main-container {
+        height: 90vh;
+    }
+    .title {
+        padding-top: 20%;
+        padding-bottom: 10%;
+        font-size: 7rem;
+    }
+    .subtitle {
+        font-size: 5rem;
+    }
+    .section-header {
+        font-size: 3rem;
+    }
+    .section-text {
+        font-size: 1.7rem;
+        font-weight: 200;
+    }
+    .about-container {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        border-radius: 0;
+    } 
+    .profile {
+        width: 90%;
+    }   
+    .profile-skills {
+        flex-direction: column;
+        margin: 0;
+        width: 90%;
+    } 
+    .profile-image img {
+        height: 100px;
+        width: 100px;
+    }    
+    .icons {
+        width: 85%;
+    }
+    .contact-container {
+        border-radius: 0;
+        margin: 0;
+    }
+    input, textarea {
+        width: 90%;
+    }
+    .submit {
+        width: 90%;
+    }
+}
+
+@media (max-width: 770px) {
     .nav-right {
         display: none;
     }
@@ -319,8 +375,19 @@ footer {
         right: 1.4rem;
         
     }
-    .main-container {
-        height: 90vh;
+    .up-arrow {
+        display: none;
+    }
+    .mobile-up {
+        display: block;
+        position: fixed;
+        bottom: -15;
+        right: -10;
+        opacity: 0.35;
+    }
+    .mobile-up img {
+        height: 3.5rem;
+        width: 3.5rem;
     }
     .title {
         padding-top: 20%;
@@ -330,26 +397,12 @@ footer {
     .subtitle {
         font-size: 3.5rem;
     }
-    .about-container {
-        flex-direction: column;
-        margin: 0;
-        align-items: center;
-        border-radius: 0;
-    } 
-    .profile {
-        width: 90%;
-    }   
-    .profile-skills {
-        flex-direction: column;
-        margin: 0;
-        width: 90%;
-    } 
-    .profile-image img {
-        height: 100px;
-        width: 100px;
-    }    
-    .icons {
-        width: 85%;
+    .section-header {
+        font-size: 2rem;
+    }
+    .section-text {
+        font-size: 1.2rem;
+        font-weight: 200;
     }
     .projects-container {
         flex-direction: column;
@@ -357,16 +410,6 @@ footer {
     }
     .project {
         margin: 2% 0;
-    }
-    .contact-container {
-        border-radius: 0;
-        margin: 0;
-    }
-    input, textarea {
-        width: 90%;
-    }
-    .submit {
-        width: 90%;
     }
 }
 
