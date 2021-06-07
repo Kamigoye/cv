@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Connolly</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://kit.fontawesome.com/2f7648e5e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+            <div class="nav-left">
+            <a href="https://github.com/ndconnolly"><i class="fab fa-github-alt"></i></a>
+            <a href="https://www.linkedin.com/in/ndconnolly"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-right">
+            <button class="closebtn" id="closebtn">
+                <i class="fas fa-times"></i>
+            </button>
+            <a class="nav-link" href="#about" onclick="clickLink()">about</a>
+            <a class="nav-link" href="#work" onclick="clickLink()">work</a>
+            <a class="nav-link" href="#contact" onclick="clickLink()">contact</a>
+            <a class="nav-link" href="resume" onclick="clickLink()">resume</a>
+            </div>
+    </nav>
+    <a href="#navbar" class="up-arrow">&#11161;</a>
+    <div class="main-container">
+        <h1 class="title">nick connolly</h1>
+        <h2 class="subtitle">web developer</h2>
+    </div>
+    <div id="about" class="about-container">
+        <div class="profile">
+        <h2 class="section-header">about me</h2>
+        <p class="section-text">At a young age, I was fascinated with learning new skills and was constantly attempting creative pursuits. As I've gotten older I've dreamed of having a career that could reignite that spark and passion, that could challenge me, and that I could grow my skills at every day. I decided it was time for a change, and I began learning web development.</p>
+            
+        <p class="section-text">Although I have no professional experience in this field, I have spent the last 18 years working in a myriad of industries where I would constantly adapt to a multitude of new systems and processes. I welcome any opportunity to improve and better myself, and look forward to challenging myself in a whole new way.</p>
+            
+        <p class="section-text">If you like what you see, please drop me a line! </p>
+        </div>
+        <div class="profile-skills">
+        <div class="profile-image">
+            <img src="./images/nick-pic1.jpg" alt="picture-of-me">     
+        </div>
+            <div class="skills">
+                <p class="section-text">Some of the technologies I've worked with: </p>
+                <div class="icons">
+                    <div class="icon">
+                        <i class="fab fa-html5"></i>
+                        <div class="icon-text">HTML5</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-css3-alt"></i>
+                        <div class="icon-text">CSS3</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-js-square"></i>
+                        <div class="icon-text">Javascript</div>
+                    </div>
+                </div>
+                <div class="icons">
+                    <div class="icon">
+                        <i class="fab fa-git-alt"></i>
+                        <div class="icon-text">Git</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-node"></i>
+                        <div class="icon-text">Node.js</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-react"></i>
+                        <div class="icon-text">React</div>
+                    </div>
+                </div>
+                <div class="icons">
+                    <div class="icon">
+                        <i class="fab fa-bootstrap"></i>
+                        <div class="icon-text">Bootstrap</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-sass"></i>
+                        <div class="icon-text">Sass</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="work" class="work-container">
+        <div class="portfolio-text">
+            <h2 class="section-header">portfolio</h2>
+            <p class="section-text">Below are a few projects I've done</p>
+        </div>
+        <div class="projects-container">
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+        </div>
+    </div>
+    <div id="contact" class="contact-container">
+        <h2 class="section-header">get in touch!</h2>
+        <form action="https://formspree.io/f/xbjqopvo" method="POST">
+            <input type="text" id="name" name="name" placeholder="name">
+            <input type="email" id="email" name="email" placeholder="email">
+            <input type="text" id="subject" name="subject" placeholder="subject">
+            <textarea id="message" name="message" placeholder="message" style="height:200px"></textarea>
+            <button class="submit" type="submit" value="submit">submit</button>
+        </form>
+    </div>
+    <footer>
+        &#169; 2021 Nick Connolly
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Built with help from ☕ -->
+
