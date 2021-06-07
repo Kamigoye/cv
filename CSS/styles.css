@@ -12,6 +12,10 @@ body {
     font-family: 'Big Shoulders Inline Text', sans-serif;
 }
 
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .title {
     font-size: 8rem;
     font-weight: 300;
@@ -68,9 +72,7 @@ body {
     color: #aad8d3;
     font-size: 1.7rem;
     cursor: pointer;
-}
-.hamburger:focus {
-    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .main-container {
