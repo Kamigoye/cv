@@ -12,6 +12,20 @@ body {
     font-family: 'Big Shoulders Inline Text', sans-serif;
 }
 
+body::after {
+    content: "";
+    background: url("../images/pinkbg.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 0.075;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position:fixed;
+    z-index: -1;   
+}
+
 a {
     -webkit-tap-highlight-color: transparent;
 }
@@ -202,12 +216,47 @@ a {
 .project {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin: 2%;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 3px solid #00adb5;
+    border-radius: 15px;
     height: 250px;
     width: 250px;
-    background-color: #aad8d3;
+}
+
+.project img {
+    display: flex;
+    align-self: center;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.project-text {
+    display: flex;
+    position: absolute;
+    align-self: center;
+    opacity: 0;
+    height: 240px;
+    width: 240px;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: #eeeeee;
+}
+
+.project:hover {
+    background-color: #393e46;
+}
+
+.project:hover img {
+    opacity: 0.1;
+}
+
+.project:hover .project-text {
+    opacity: 1;
 }
 
 .contact-container {
